@@ -9,8 +9,7 @@ import Profile from "./views/Profile.js";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/profile" component={Profile} />
-      <Redirect from="/" to="/profile" />
+      <Redirect from="/" component={Profile} />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
